@@ -371,12 +371,12 @@ public class ListTester {
 		// case arrayList:
 		// 	listToUse = new IUArrayList<Integer>();
 		// 	break;
-		case singleLinkedList:
-			listToUse = new IUSingleLinkedList<Integer>();
+		// case singleLinkedList:
+		// 	listToUse = new IUSingleLinkedList<Integer>();
+		// 	break;
+		case doubleLinkedList:
+			listToUse = new IUDoubleLinkedList<Integer>();
 			break;
-//		case doubleLinkedList:
-//			listToUse = new IUDoubleLinkedList<Integer>();
-//			break;
 		default:
 			listToUse = null;
 		}
