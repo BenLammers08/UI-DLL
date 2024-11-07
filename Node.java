@@ -7,7 +7,7 @@
 public class Node<E> {
 	private Node<E> nextElement;
 	private E element;
-	private E prevNode;
+	private Node<E> prevNode;
 
 
 	/**
@@ -59,7 +59,24 @@ public class Node<E> {
 	public void setElement(E elem) {
 		element = elem;
 	}
+/**
+ 	 * Returns the node that follows this one.
+  	 *
+  	 * @return the node that follows the current one
+  	 */
+	  public Node<E> getprevious() {
+		return prevNode;
+	}
 
+	/**
+ 	 * Sets the node that follows this one.
+ 	 *
+ 	 * @param node
+ 	 *            the node to be set to follow the current one
+ 	 */
+	public void setPrevios(Node<E> node) {
+		prevNode = node;
+	}
 	@Override
 	public String toString() {
 		return "Element: " + element.toString() + " Has next: " + (nextElement != null);
