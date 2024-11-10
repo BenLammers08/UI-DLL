@@ -171,15 +171,13 @@ public class IUDoubleLinkedList<T> implements IndexedUnsortedList<T> {
 
     @Override
     public T first() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'first'");
+        return head.getElement();
    
     }
 
     @Override
     public T last() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'last'");
+       return tail.getElement();
    
     }
 
@@ -192,15 +190,18 @@ public class IUDoubleLinkedList<T> implements IndexedUnsortedList<T> {
 
     @Override
     public boolean isEmpty() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'isEmpty'");
+        if(head==tail){
+            return true;
+        }else{
+            return false;
+        }
     
     }
 
     @Override
     public int size() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'size'");
+        return size;
+        
     
     }
 
