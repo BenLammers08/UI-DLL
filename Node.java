@@ -64,7 +64,7 @@ public class Node<E> {
   	 *
   	 * @return the node that follows the current one
   	 */
-	  public Node<E> getprevious() {
+	  public Node<E> getPrevious() {
 		return prevNode;
 	}
 
@@ -74,7 +74,7 @@ public class Node<E> {
  	 * @param node
  	 *            the node to be set to follow the current one
  	 */
-	public void setPrevios(Node<E> node) {
+	public void setPrevious(Node<E> node) {
 		prevNode = node;
 	}
 	@Override
