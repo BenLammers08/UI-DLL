@@ -971,6 +971,12 @@ public class ListTester {
 			// ListIterator
 			if (SUPPORTS_LIST_ITERATOR) {
 				// TODO: will add for double-linked list
+
+
+
+
+
+
 			} else {
 				printTest(scenarioName + "_testListIter", testListIter(scenario.build(), Result.UnsupportedOperation));
 				printTest(scenarioName + "_testListIter0",
@@ -1074,6 +1080,12 @@ public class ListTester {
 			// ListIterator
 			if (SUPPORTS_LIST_ITERATOR) {
 				// TODO: will add for double-linked list
+
+
+
+
+
+				
 			} else {
 				printTest(scenarioName + "_testListIter", testListIter(scenario.build(), Result.UnsupportedOperation));
 				printTest(scenarioName + "_testListIter0",

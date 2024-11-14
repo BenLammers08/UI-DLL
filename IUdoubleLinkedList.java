@@ -111,6 +111,10 @@ public class IUDoubleLinkedList<T> implements IndexedUnsortedList<T> {
         if (head == null) {
             throw new NoSuchElementException();
         }
+        if (head == tail){
+            
+
+        }
         T retVal = head.getElement();
         head = head.getNext();
         modCount++;
@@ -263,7 +267,7 @@ public class IUDoubleLinkedList<T> implements IndexedUnsortedList<T> {
 
     @Override
     public T last() {
-        if (tail == null) {
+        if (head == null) {
             throw new NoSuchElementException();
         }
         return tail.getElement();
